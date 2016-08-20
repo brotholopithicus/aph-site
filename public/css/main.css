@@ -95,6 +95,7 @@ a {
     -moz-perspective: 1000;
     -o-perspective: 1000;
     perspective: 1000;
+    margin-right: 2em;
 }
 .flip-container:hover .flipper, .flip-container.hover .flipper {
     -webkit-transform: rotateY(180deg);
