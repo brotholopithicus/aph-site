@@ -1,0 +1,81 @@
+doctype html
+html
+    head
+        meta(charset='utf-8')
+        meta(name='“viewport”', content='“width=device-width,initial-scale=1,user-scalable=no”')
+        title Annemarie Hereford | Mammoth Queen | Santa Cruz, CA
+        link(rel='stylesheet', href='css/normalize.css')
+        link(rel='stylesheet', href='css/main.css')
+        link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css')
+    body
+        // TOP SECTION
+        .section.full-height
+            .container.animated.fadeInUp.row
+                .flip-container(ontouchstart="this.classList.toggle('hover');")
+                    .flipper.picture-container
+                        .front
+                            img.front.profile-picture(src='imgs/profile-1.jpg', alt='profile picture')
+                        .back
+                            img.front.profile-picture(src='imgs/profile-2.jpg', alt='profile picture two')
+                .text-container
+                    h2.light
+                        | Annemarie
+                        b Hereford
+                    h3.grey Designer and Creator of Amazing Things
+                    a.colored.sliding-middle-out(href='mailto:annemariephereford@gmail.com')
+                        h3 annemariephereford@gmail.com
+                    //
+                        <a href="https://twitter.com" class="colored sliding-middle-out">
+                        <h3>@mammoth-queen</h3>
+                        </a>
+        .hint
+            span.hint-text Scroll down to see more
+            .arrow-down
+        // ABOUT ME SECTION
+        .section
+            h1 About Me
+            p.about-me-text I'm
+                b.colored beautiful
+                | , smart, funny, attactive,
+                b.colored beautiful
+                | , creative,
+                b.colored beautiful
+                | , hard-working, dedicated, loving,
+                b.colored beautiful
+                | , smart,
+                b.colored beautiful
+                | , funny, and married to
+                b.colored-2 James
+                | , who is also pretty amazing.
+        .hint
+            span.hint-text Take a look at what I've been up to
+            .arrow-down
+        // WORK SECTION
+        .section
+            h1 My Work
+            .work-list
+                .work-table
+                    .work-dates
+                        span MARCH 1990 - PRESENT
+                    .work-items
+                        span
+                            b KILLING IT
+                        p
+                            | Scratch the box. Meowwww purr for no reason meowzer! yet knock over christmas tree yet sweet beast present belly, scratch hand when stroked or intently sniff hand. Hide from vacuum cleaner have secret plans vommit food and eat it again eat from dog's
+                            | food please stop looking at your phone and pet me. Stare at wall turn and meow stare at wall some more meow again continue staring lick butt and make a weird face yet stare out the window for lick the other cats but scamper, or
+                            | chase the pig around the house.
+        .hint
+            span.hint-text I'm taken sorry.
+            .arrow-down
+        // CONTACT SECTION
+        .section.full-height
+            h1 Contact Me
+            a.colored.sliding-middle-out(href='mailto:annemariephereford@gmail.com')
+                h3.colored annemariephereford@gmail.com
+            .icons
+                a(href='twitter.com')
+                    img.twitter(src='imgs/twitter.png', alt='twitter')
+                a(href='facebook.com')
+                    img.facebook(src='imgs/facebook.png', alt='facebook')
+        // SCRIPTS
+        script(src='js/script.js')

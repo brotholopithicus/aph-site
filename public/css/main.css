@@ -1,0 +1,267 @@
+@import 'https://fonts.googleapis.com/css?family=Merriweather+Sans:700,600,400|Open+Sans:400';
+
+/* main elements
+   ========================================================================== */
+
+body, body * {
+    max-height: 100000px;
+    transform: translate3d(0, 0, 0);
+}
+h1 {
+    font-family: "Merriweather Sans", sans-serif;
+    line-height: 1.20;
+    font-weight: 700;
+    opacity: 1.0;
+    letter-spacing: -0.72px;
+    word-spacing: 0;
+    text-transform: none;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+h2 {
+    font-family: "Merriweather Sans", sans-serif;
+    line-height: 1.4;
+    font-weight: 600;
+    opacity: 1.0;
+    letter-spacing: -0.72px;
+    word-spacing: 0;
+    text-transform: none;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+h3 {
+    font-family: "Merriweather Sans", sans-serif;
+    line-height: 1.4;
+    font-weight: 400;
+    opacity: 0.9;
+    letter-spacing: 0;
+    word-spacing: 0;
+    text-transform: none;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+span, p {
+    font-family: "Open Sans", sans-serif;
+    line-height: 2;
+    font-weight: 400;
+    opacity: 0.7;
+    letter-spacing: -0.06px;
+    word-spacing: 0;
+    text-transform: none;
+    margin-top: 0;
+}
+html, body {
+    width: 100%;
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* custom elements
+   ========================================================================== */
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+.row {
+    flex-direction: row;
+}
+.hint {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 25vh;
+}
+.full-height {
+    height: 70vh;
+}
+.section {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    margin: 1em;
+    width: calc(100% - 40px);
+}
+.flip-container {
+    -webkit-perspective: 1000;
+    -moz-perspective: 1000;
+    -o-perspective: 1000;
+    perspective: 1000;
+}
+.flip-container:hover .flipper, .flip-container.hover .flipper {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+.flip-container, .front, .back {
+    width: 144px;
+    height: 144px;
+    border-radius: 100%;
+}
+.flipper {
+    -webkit-transition: 0.6s;
+    -webkit-transform-style: preserve-3d;
+    -moz-transition: 0.6s;
+    -moz-transform-style: preserve-3d;
+    -o-transition: 0.6s;
+    -o-transform-style: preserve-3d;
+    transition: 0.6s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+.front, .back {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.front {
+    z-index: 2;
+}
+.back {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+.text-container {
+    margin-left: 10px;
+}
+.light {
+    font-weight: 300;
+}
+.grey {
+    color: #36332b;
+}
+.work-list {
+    margin: 50px !important;
+    width: 100%;
+    max-width: 800px;
+}
+.work-table {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.social-icons {
+    display: flex;
+    flex-direction: row;
+}
+.social-icon {
+    width: 64px;
+    height: 64px;
+    transition: .5s;
+}
+@keyframes wiggle {
+    0% {
+        transform: rotateZ(0deg);
+    }
+    25% {
+        transform: rotateZ(5deg);
+    }
+    75% {
+        transform: rotateZ(-5deg);
+    }
+    100% {
+        transform: rotateZ(0deg);
+    }
+}
+.social-icon:hover {
+    animation-name: wiggle;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+    animation-delay: 0;
+    animation-timing-function: linear;
+    animation-direction: normal;
+}
+.work-dates {
+    width: 30%;
+    display: block;
+    text-align: end;
+    margin-right: 20px;
+}
+.work-items {
+    width: 70%;
+}
+.sliding-middle-out {
+    display: inline-block;
+    position: relative;
+    padding-bottom: 3px;
+}
+.sliding-middle-out:after {
+    content: '';
+    display: block;
+    margin: auto;
+    height: 3px;
+    width: 0px;
+    background: transparent;
+    transition: width .5s ease, background-color .5s ease;
+}
+.sliding-middle-out:hover:after {
+    width: 100%;
+    background: #C82DB4;
+}
+.small {
+    font-size: 12px;
+}
+.centered-text {
+    text-align: center;
+}
+.arrow-down {
+    margin-top: 10px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 8px 0 8px;
+    border-color: #333333 transparent transparent transparent;
+}
+.about-me-text {
+    max-width: 600px;
+}
+.colored {
+    color: #C82DB4;
+}
+.colored-2 {
+    color: #24CCE9;
+}
+.colored-3 {
+    color: #C952ED;
+}
+.colored-4 {
+    color: #ED7252;
+}
+.colored-5 {
+    color: #ED7252;
+}
+.facebook, .twitter {
+width: 44px;
+height: 44px;
+}
+.facebook:hover {
+    animation-name: wiggle;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+    animation-delay: 0;
+    animation-timing-function: linear;
+    animation-direction: normal;
+}
+.twitter:hover {
+    animation-name: wiggle;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+    animation-delay: 0;
+    animation-timing-function: linear;
+    animation-direction: normal;
+}
