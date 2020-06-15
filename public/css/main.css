@@ -212,7 +212,7 @@ a {
 }
 .sliding-middle-out:hover:after {
     width: 100%;
-    background: #C82DB4;
+    background: #1d7adb;
 }
 .small {
     font-size: 12px;
@@ -232,19 +232,22 @@ a {
     max-width: 600px;
 }
 .colored {
-    color: #C82DB4;
+    color: #1d7adb;
 }
 .colored-2 {
-    color: #24CCE9;
+    color: #ff0000;
 }
 .colored-3 {
-    color: #C952ED;
+    color: #44cb34;
 }
 .colored-4 {
     color: #ED7252;
 }
 .colored-5 {
-    color: #ED7252;
+    color: #9429d6;
+}
+.heavy {
+  font-weight: 900;
 }
 .facebook, .twitter {
 width: 44px;
@@ -265,4 +268,8 @@ height: 44px;
     animation-delay: 0;
     animation-timing-function: linear;
     animation-direction: normal;
+}
+.picture-two {
+  box-shadow: 2px 2px 10px black, -2px -2px 10px black;
+  border-radius: 50%;
 }
